@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NexAI — Premium Android SaaS Template</title>
+
+  <meta
+    name="description"
+    content="NexAI — قالب Android احترافي لتطبيقات الذكاء الاصطناعي، مبني باستخدام Kotlin وJetpack Compose وClean Architecture."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <a href="#home" class="brand">
+      <span class="brand-icon">N</span>
+      <span>NexAI</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#overview" data-i18n="nav.overview">نظرة عامة</a>
+      <a href="#features" data-i18n="nav.features">المميزات</a>
+      <a href="#tech" data-i18n="nav.tech">التقنيات</a>
+      <a href="#structure" data-i18n="nav.structure">البنية</a>
+      <a href="#docs" data-i18n="nav.docs">التوثيق</a>
+      <a href="#about" data-i18n="nav.about">عن المشروع</a>
+    </nav>
+
+    <button id="languageBtn" class="lang-btn">
+      English
+    </button>
+
+  </div>
+</header>
+
+
+<main id="home">
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.eyebrow">
+            Premium Android SaaS Template
+          </span>
+        </div>
+
+        <h1>
+          <span data-i18n="hero.title1">
+            ابنِ تطبيق الذكاء الاصطناعي
+          </span>
+
+          <span class="gradient-text" data-i18n="hero.title2">
+            على أساس احترافي
+          </span>
+        </h1>
+
+        <p data-i18n="hero.description">
+          NexAI هو قالب Android تجاري احترافي مبني بـ Kotlin
+          وJetpack Compose، مع Clean Architecture وMVVM
+          وبنية AI قابلة للتبديل والتوسع.
+        </p>
+
+        <div class="hero-tags">
+          <span>Kotlin</span>
+          <span>Jetpack Compose</span>
+          <span>Material 3</span>
+          <span>Clean Architecture</span>
+          <span>MVVM</span>
+        </div>
+
+        <div class="hero-facts">
+
+          <div>
+            <strong>100%</strong>
+            <span data-i18n="hero.kotlin">
+              Kotlin
+            </span>
+          </div>
+
+          <div>
+            <strong>AI</strong>
+            <span data-i18n="hero.providers">
+              Pluggable Providers
+            </span>
+          </div>
+
+          <div>
+            <strong>RLS</strong>
+            <span data-i18n="hero.supabase">
+              Supabase Ready
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT PREVIEW -->
+
+      <div class="product-preview">
+
+        <div class="phone">
+
+          <div class="phone-top">
+            <span></span>
+            <b>NexAI</b>
+            <span></span>
+          </div>
+
+          <div class="chat-header">
+
+            <div class="ai-logo">
+              N
+            </div>
+
+            <div>
+              <strong>AI Assistant</strong>
+              <small>Online</small>
+            </div>
+
+          </div>
+
+          <div class="chat-messages">
+
+            <div class="message user">
+              <span data-i18n="preview.user">
+                اكتب لي فكرة لتطبيق جديد
+              </span>
+            </div>
+
+            <div class="message assistant">
+
+              <div class="small-logo">
+                N
+              </div>
+
+              <span data-i18n="preview.ai">
+                بالتأكيد. يمكننا تحويل فكرتك إلى
+                مشروع Android منظم وقابل للتوسع.
+              </span>
+
+            </div>
+
+            <div class="code-preview">
+
+              <div class="code-top">
+                <span>AIProvider.kt</span>
+                <span>Code</span>
+              </div>
+
+<pre><code>interface AIProvider {
+
+    suspend fun generate(
+        prompt: String
+    ): String
+}</code></pre>
+
+            </div>
+
+          </div>
+
+          <div class="chat-input">
+            <span data-i18n="preview.input">
+              اكتب رسالتك...
+            </span>
+
+            <button>↑</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OVERVIEW -->
+
+  <section id="overview" class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label" data-i18n="overview.label">
+          NEXAI
+        </span>
+
+        <h2 data-i18n="overview.title">
+          قالب مبني لمشروع حقيقي
+        </h2>
+
+        <p data-i18n="overview.description">
+          NexAI ليس تطبيقًا تعليميًا بسيطًا أو مجرد واجهة.
+          تم بناء القالب باستخدام بنية تفصل منطق الأعمال
+          عن الواجهة ومصادر البيانات، مما يجعله أساسًا
+          مناسبًا لتطوير منتجات AI مختلفة.
+        </p>
+
+      </div>
+
+
+      <div class="overview-grid">
+
+        <article class="info-card">
+
+          <span class="card-number">01</span>
+
+          <h3 data-i18n="overview.card1.title">
+            Production-Oriented
+          </h3>
+
+          <p data-i18n="overview.card1.text">
+            بنية منظمة ومكونات واضحة بدل تجميع كل منطق
+            التطبيق داخل الشاشات.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <span class="card-number">02</span>
+
+          <h3 data-i18n="overview.card2.title">
+            AI Agnostic
+          </h3>
+
+          <p data-i18n="overview.card2.text">
+            واجهة AIProvider تسمح بإضافة مزود ذكاء اصطناعي
+            دون إعادة بناء واجهة المحادثة.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <span class="card-number">03</span>
+
+          <h3 data-i18n="overview.card3.title">
+            Offline First
+          </h3>
+
+          <p data-i18n="overview.card3.text">
+            يتم حفظ المحادثات والرسائل محليًا باستخدام
+            Room لإتاحة الوصول إلى السجل دون اتصال.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <span class="card-number">04</span>
+
+          <h3 data-i18n="overview.card4.title">
+            Supabase Ready
+          </h3>
+
+          <p data-i18n="overview.card4.text">
+            يتضمن المشروع مخطط Supabase مع Profiles و
+            Conversations وMessages وSubscriptions وRLS.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+
+  <section id="features" class="section dark">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label" data-i18n="features.label">
+          FEATURES
+        </span>
+
+        <h2 data-i18n="features.title">
+          مميزات القالب
+        </h2>
+
+        <p data-i18n="features.description">
+          المزايا الموجودة في المشروع كما هي موضحة في
+          وثائق المستودع.
+        </p>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        <article class="feature">
+
+          <div class="feature-icon">AI</div>
+
+          <h3 data-i18n="feature.ai.title">
+            Pluggable AI Architecture
+          </h3>
+
+          <p data-i18n="feature.ai.text">
+            بنية AIProvider تسمح بالتكامل مع Google Gemini
+            وOpenAI وAnthropic أو Backend مخصص.
+          </p>
+
+        </article>
+
+
+        <article class="feature">
+
+          <div class="feature-icon">UI</div>
+
+          <h3 data-i18n="feature.chat.title">
+            Professional Chat UI
+          </h3>
+
+          <p data-i18n="feature.chat.text">
+            واجهة محادثة مبنية باستخدام Jetpack Compose
+            مع فقاعات رسائل وتخطيط متجاوب.
+          </p>
+
+        </article>
+
+
+        <article class="feature">
+
+          <div class="feature-icon">DB</div>
+
+          <h3 data-i18n="feature.room.title">
+            Room Database
+          </h3>
+
+          <p data-i18n="feature.room.text">
+            قاعدة بيانات محلية باستخدام Room / SQLite
+            لتخزين المحادثات والرسائل.
+          </p>
+
+        </article>
+
+
+        <article class="feature">
+
+          <div class="feature-icon">☁</div>
+
+          <h3 data-i18n="feature.supabase.title">
+            Supabase Integration
+          </h3>
+
+          <p data-i18n="feature.supabase.text">
+            ملف supabase_schema.sql يتضمن الجداول
+            والسياسات المطلوبة للبنية السحابية.
+          </p>
+
+        </article>
+
+
+        <article class="feature">
+
+          <div class="feature-icon">🔐</div>
+
+          <h3 data-i18n="feature.security.title">
+            Secure Secrets
+          </h3>
+
+          <p data-i18n="feature.security.text">
+            استخدام Secrets Gradle Plugin لمنع وضع
+            مفاتيح API داخل Git.
+          </p>
+
+        </article>
+
+
+        <article class="feature">
+
+          <div class="feature-icon">◎</div>
+
+          <h3 data-i18n="feature.theme.title">
+            Theme & Branding Engine
+          </h3>
+
+          <p data-i18n="feature.theme.text">
+            يمكن تغيير الألوان والخطوط والنصوص وهوية
+            التطبيق من AppConfig وThemeConfig.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TECH STACK -->
+
+  <section id="tech" class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label" data-i18n="tech.label">
+          TECH STACK
+        </span>
+
+        <h2 data-i18n="tech.title">
+          التقنيات المستخدمة
+        </h2>
+
+      </div>
+
+
+      <div class="tech-grid">
+
+        <div class="tech-item">
+          <span>01</span>
+          <strong>Kotlin</strong>
+          <small data-i18n="tech.kotlin">
+            لغة المشروع
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>02</span>
+          <strong>Jetpack Compose</strong>
+          <small data-i18n="tech.compose">
+            واجهة المستخدم
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>03</span>
+          <strong>Material 3</strong>
+          <small data-i18n="tech.material">
+            نظام التصميم
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>04</span>
+          <strong>Clean Architecture</strong>
+          <small data-i18n="tech.clean">
+            بنية التطبيق
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>05</span>
+          <strong>MVVM</strong>
+          <small data-i18n="tech.mvvm">
+            إدارة منطق الواجهة
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>06</span>
+          <strong>Room / SQLite</strong>
+          <small data-i18n="tech.room">
+            التخزين المحلي
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>07</span>
+          <strong>StateFlow</strong>
+          <small data-i18n="tech.state">
+            إدارة الحالة
+          </small>
+        </div>
+
+        <div class="tech-item">
+          <span>08</span>
+          <strong>Supabase</strong>
+          <small data-i18n="tech.supabase">
+            Backend اختياري
+          </small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ARCHITECTURE -->
+
+  <section id="structure" class="section dark">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label" data-i18n="structure.label">
+          PROJECT STRUCTURE
+        </span>
+
+        <h2 data-i18n="structure.title">
+          بنية المشروع
+        </h2>
+
+        <p data-i18n="structure.description">
+          المشروع مقسم إلى طبقات واضحة، مما يجعل قراءة
+          الكود وتطويره أسهل.
+        </p>
+
+      </div>
+
+
+      <div class="architecture">
+
+        <div class="folder">
+
+          <div class="folder-title">
+            <span>📁</span>
+            <strong>core/</strong>
+          </div>
+
+          <p data-i18n="folder.core">
+            AppConfig وThemeConfig والثيم المركزي.
+          </p>
+
+        </div>
+
+
+        <div class="folder">
+
+          <div class="folder-title">
+            <span>📁</span>
+            <strong>domain/</strong>
+          </div>
+
+          <p data-i18n="folder.domain">
+            Business Logic وInterfaces وModels.
+          </p>
+
+        </div>
+
+
+        <div class="folder">
+
+          <div class="folder-title">
+            <span>📁</span>
+            <strong>data/</strong>
+          </div>
+
+          <p data-i18n="folder.data">
+            Room DAOs وAI Providers وتنفيذ مصادر البيانات.
+          </p>
+
+        </div>
+
+
+        <div class="folder">
+
+          <div class="folder-title">
+            <span>📁</span>
+            <strong>presentation/</strong>
+          </div>
+
+          <p data-i18n="folder.presentation">
+            شاشات Compose وViewModels وواجهات التطبيق.
+          </p>
+
+        </div>
+
+
+        <div class="folder">
+
+          <div class="folder-title">
+            <span>📁</span>
+            <strong>di/</strong>
+          </div>
+
+          <p data-i18n="folder.di">
+            AppContainer وإدارة Dependency Injection.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="architecture-flow">
+
+        <div>Presentation</div>
+        <span>→</span>
+        <div>Domain</div>
+        <span>→</span>
+        <div>Data</div>
+        <span>→</span>
+        <div>Services</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECURITY -->
+
+  <section class="section">
+
+    <div class="container security-grid">
+
+      <div>
+
+        <span class="section-label" data-i18n="security.label">
+          SECURITY
+        </span>
+
+        <h2 data-i18n="security.title">
+          المفاتيح السرية لا تنتمي إلى Git
+        </h2>
+
+        <p data-i18n="security.text">
+          يعتمد المشروع على Secrets Gradle Plugin لإدارة
+          مفاتيح API وحقنها وقت البناء بدل تضمينها مباشرة
+          داخل الكود المصدري.
+        </p>
+
+      </div>
+
+      <div class="security-card">
+
+        <div class="terminal-head">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <pre><code>local.properties
+        ↓
+Gradle Secrets
+        ↓
+Runtime
+        ↓
+AI Provider</code></pre>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOCUMENTATION -->
+
+  <section id="docs" class="section dark">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label" data-i18n="docs.label">
+          DOCUMENTATION
+        </span>
+
+        <h2 data-i18n="docs.title">
+          التوثيق الموجود مع المشروع
+        </h2>
+
+        <p data-i18n="docs.description">
+          يتضمن المستودع ملفات توثيق مخصصة لمساعدة المطور
+          على إعداد المشروع وفهم مكوناته.
+        </p>
+
+      </div>
+
+
+      <div class="docs-grid">
+
+        <div class="doc-card">
+          <code>README.md</code>
+          <h3>README</h3>
+          <p data-i18n="docs.readme">
+            نظرة عامة على المشروع والمميزات والتقنيات.
+          </p>
+        </div>
+
+        <div class="doc-card">
+          <code>SETUP.md</code>
+          <h3>Setup</h3>
+          <p data-i18n="docs.setup">
+            تعليمات إعداد وتشغيل المشروع.
+          </p>
+        </div>
+
+        <div class="doc-card">
+          <code>SUPABASE.md</code>
+          <h3>Supabase</h3>
+          <p data-i18n="docs.supabase">
+            شرح إعداد قاعدة البيانات السحابية والمخطط.
+          </p>
+        </div>
+
+        <div class="doc-card">
+          <code>PRODUCT_FEATURES.md</code>
+          <h3>Product Features</h3>
+          <p data-i18n="docs.features">
+            تفاصيل أعمق عن خصائص المنتج.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+
+  <section class="section">
+
+    <div class="container faq-container">
+
+      <div class="section-heading">
+
+        <span class="section-label">FAQ</span>
+
+        <h2 data-i18n="faq.title">
+          أسئلة شائعة
+        </h2>
+
+      </div>
+
+
+      <div class="faq">
+
+        <details>
+          <summary data-i18n="faq.q1">
+            ما هو NexAI؟
+          </summary>
+
+          <p data-i18n="faq.a1">
+            قالب Android تجاري لتسريع تطوير تطبيقات
+            الذكاء الاصطناعي باستخدام Kotlin وJetpack Compose.
+          </p>
+        </details>
+
+
+        <details>
+          <summary data-i18n="faq.q2">
+            ما هي بنية التطبيق؟
+          </summary>
+
+          <p data-i18n="faq.a2">
+            يعتمد المشروع على Clean Architecture وMVVM
+            مع فصل طبقات Presentation وDomain وData.
+          </p>
+        </details>
+
+
+        <details>
+          <summary data-i18n="faq.q3">
+            هل يمكن استخدام مزود AI مختلف؟
+          </summary>
+
+          <p data-i18n="faq.a3">
+            نعم. تم تصميم AIProvider ليكون نقطة التكامل
+            مع Gemini أو OpenAI أو Anthropic أو Backend مخصص.
+          </p>
+        </details>
+
+
+        <details>
+          <summary data-i18n="faq.q4">
+            هل يحتاج التطبيق إلى الإنترنت دائمًا؟
+          </summary>
+
+          <p data-i18n="faq.a4">
+            المحادثات والسجل المحلي يمكن حفظهما باستخدام
+            Room، مما يوفر تجربة Offline-First للبيانات المحلية.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about" class="about">
+
+    <div class="container about-card">
+
+      <div>
+
+        <span class="section-label" data-i18n="about.label">
+          ABOUT
+        </span>
+
+        <h2>NexAI</h2>
+
+        <p data-i18n="about.text">
+          مشروع يركز على تقديم أساس Android احترافي
+          لتطبيقات الذكاء الاصطناعي، مع بنية حديثة وقابلة
+          للتخصيص والتطوير.
+        </p>
+
+      </div>
+
+
+      <div class="about-info">
+
+        <div>
+          <span data-i18n="about.developer">
+            المطور
+          </span>
+
+          <strong>
+            محمد هشام الصلاحي
+          </strong>
+        </div>
+
+
+        <div>
+          <span data-i18n="about.company">
+            الشركة
+          </span>
+
+          <strong>
+            S AI Pro
+          </strong>
+        </div>
+
+
+        <div>
+          <span data-i18n="about.location">
+            المقر
+          </span>
+
+          <strong data-i18n="about.albaha">
+            الباحة، المملكة العربية السعودية
+          </strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer">
+
+    <div class="brand">
+      <span class="brand-icon">N</span>
+      <span>NexAI</span>
+    </div>
+
+    <p data-i18n="footer.description">
+      Premium Android SaaS Template
+    </p>
+
+    <span>
+      © 2026 S AI Pro
+    </span>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
